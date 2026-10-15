@@ -218,7 +218,7 @@ The one action on the page; a printed plate that dials Ed.
 
 ### Header Bar
 - **Style:** bottle green, 76px minimum height, ivory text, 1px translucent ivory hairline below. Not sticky.
-- **Content:** the drawn shamrock mark (30px, ivory leaves, light-brass stem) with the wordmark on the left; the full phone number on the right in sans 600, tabular, 0.04em. Both are 48px-tall tap targets.
+- **Content:** the engraved line shamrock (30px, ivory outline with a vein in each leaf, stem tucked behind the lower leaf; shared across the Shamrock builds) with the wordmark on the left; the full phone number on the right in sans 600, tabular, 0.04em. Both are 48px-tall tap targets.
 - **Hover:** the number gains a brass underline (0.25em offset); focus uses the brass outline.
 
 ### Roman Numeral Steps

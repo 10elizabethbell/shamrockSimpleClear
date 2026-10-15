@@ -1,0 +1,44 @@
+{
+  "title": "Choose the new hero",
+  "question": "Same copy, green, type and button in all three; only how the road is staged changes. Pick one, or steer.",
+  "options": [
+    {
+      "id": "d-open-road",
+      "label": "The open road",
+      "lineage": "editorial landscape plate, road running off the page",
+      "thesis": "The road grows to the full height of the hero, runs north to south and off the top and bottom edges, so it frames the page instead of floating as a small drawing.",
+      "palette": ["#123d2e", "#f4efe4", "#c9a76b", "#0c2b20"],
+      "materials": ["fine-line road", "Marcellus labels", "brass dashes"],
+      "viewport": "Text left; the road on the right fills the green from top to bottom. On phones it sweeps across the full width under the button.",
+      "risk": "Quietest; the road is still a drawing, just a bigger and more confident one.",
+      "comp": ".impeccable/mocks/hero-road/d-open-road.png",
+      "board": ".impeccable/mocks/hero-road/d-open-road-desktop.png"
+    },
+    {
+      "id": "e-map-plate",
+      "label": "Map plate",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "engraved map plate in a private-club atlas",
+      "thesis": "The road sits on a deeper green plate with a double brass hairline frame and a small THE ROUTE label, like an engraved map tipped into a book.",
+      "palette": ["#123d2e", "#0c2b20", "#c9a76b", "#f4efe4"],
+      "materials": ["double brass hairline frame", "fine-line road", "letterspaced label"],
+      "viewport": "Text left; the framed plate on the right is as tall as the text block. On phones the plate sits under the button.",
+      "risk": "Most formal; the frame adds one more element to the first screen.",
+      "comp": ".impeccable/mocks/hero-road/e-map-plate.png",
+      "board": ".impeccable/mocks/hero-road/e-map-plate-desktop.png"
+    },
+    {
+      "id": "f-itinerary-road",
+      "label": "Itinerary road",
+      "lineage": "first-class itinerary set along the road",
+      "thesis": "The road carries the trip: FROM New Jersey at the top stop and TO Florida at the bottom, set large in the serif, so the drawing says the service in four words.",
+      "palette": ["#123d2e", "#f4efe4", "#c9a76b", "#0c2b20"],
+      "materials": ["fine-line road", "letterspaced FROM / TO labels", "large serif place names"],
+      "viewport": "Text left; the tall road on the right with large From/To place names. On phones a short vertical road with From/To beside it.",
+      "risk": "Repeats New Jersey and Florida from Ed's line just to the left.",
+      "comp": ".impeccable/mocks/hero-road/f-itinerary-road.png",
+      "board": ".impeccable/mocks/hero-road/f-itinerary-road-desktop.png"
+    }
+  ],
+  "steer": true
+}

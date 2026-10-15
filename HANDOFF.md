@@ -11,7 +11,7 @@
 - **Sections:** How it works (I A call · II Your flight · III Your car, waiting) → The rate ("$1 per mile", "Call for your total") → One driver ("I drive your car myself. It never goes on a truck, so it can travel packed with your things." + the card's other two services) → When a truck is the better choice (answer always showing) → Heading south this winter? (green, ivory Call button) → footer (deep green).
 - **Layout:** one column on phones; from 1024px each band puts its heading on the left and content on the right. A phone held sideways gets a tighter hero so Call stays on the first screen.
 - **Contact:** every call link is `tel:+17323003835`. No text button (texting unknown).
-- **Shareables:** `favicon.svg` and `apple-touch-icon.png` (ivory shamrock with a brass stem on bottle green), `og.png` 1200x630 (green, headline, number, the road).
+- **Shareables:** `favicon.svg` and `apple-touch-icon.png` (the engraved line shamrock in ivory on bottle green), `og.png` 1200x630 (green, headline, number, the road).
 
 ## Assumptions I made
 - **$1 a mile is on the page.** The brief (written before it was confirmed) says to keep rates as a placeholder, but your sibling builds record "$1 a mile (Ed, via Ellie, 2026-10-15)", so I used it. Marked with a `RATE` comment in the HTML.
@@ -20,7 +20,7 @@
 - **"You can pack it full"** follows the brief's differentiator. Not confirmed by Ed; there may be weight or contents limits.
 - **"In the spring, I drive it back to New Jersey"** comes from your description of the business (2026-10-13).
 - **The honest answer** (truck carrier if the car doesn't run or you don't want miles on it) is general driveaway knowledge in Ed's voice, not something he said.
-- **The shamrock is a drawing** (same shape as the other Shamrock builds), not the card's emblem, because the brief says to ask before using a card scan. Green `#0b6b3a` is a readable shamrock green, not sampled from the card.
+- **The shamrock is the engraved line drawing Ellie picked for all the Shamrock builds (2026-10-15, from shamrockElegant):** one fine outline of three heart leaves with a vein in each, the stem tucked behind the lower leaf, drawn in ivory here. It is not the card's emblem (the brief says to ask before using a card scan). The line is heavier in the 30px header and the icons so it reads small.
 - **Marcellus** was my pick for the serif: engraved and classical, and sturdier for older eyes than thin luxury serifs (Premium Concierge already uses Cormorant). Easy to swap: one `@font-face` and `--serif`.
 - **Copy got more formal** for the restyle ("I'll advise you honestly", "$1 per mile", "My own cell. You'll speak with me directly."), still first person as Ed.
 - **The card tagline ("Life is a Highway... Drive it All Night Long") is left off.** "All night long" could worry a careful 60+ customer about a tired driver. Easy to add to the footer if you or Ed want it.
