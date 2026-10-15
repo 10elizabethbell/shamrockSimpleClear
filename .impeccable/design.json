@@ -1,343 +1,372 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T11:47:48.927689+00:00",
+  "generatedAt": "2026-10-15T13:13:18+00:00",
   "title": "Design System: Shamrock Transportation",
   "extensions": {
     "colorMeta": {
-      "shamrock-green": {
+      "bottle-green": {
         "role": "primary",
-        "displayName": "Shamrock Green",
-        "canonical": "oklch(46.5% 0.114 153.7)",
+        "displayName": "Bottle Green",
+        "canonical": "oklch(32.5% 0.055 166.6)",
         "tonalRamp": [
-          "oklch(15% 0.11 153.7)",
-          "oklch(27% 0.11 153.7)",
-          "oklch(39% 0.11 153.7)",
-          "oklch(51% 0.11 153.7)",
-          "oklch(63% 0.11 153.7)",
-          "oklch(75% 0.11 153.7)",
-          "oklch(85% 0.11 153.7)",
-          "oklch(95% 0.11 153.7)"
+          "#000f08",
+          "#102b21",
+          "#294a3d",
+          "#446b5b",
+          "#648d7c",
+          "#8baf9f",
+          "#b2d2c4",
+          "#dbf6ea"
         ]
       },
-      "shamrock-green-deep": {
+      "bottle-green-deep": {
         "role": "primary",
-        "displayName": "Deep Shamrock",
-        "canonical": "oklch(39% 0.093 154.3)",
+        "displayName": "Deep Bottle Green",
+        "canonical": "oklch(26.2% 0.042 166.7)",
         "tonalRamp": [
-          "oklch(15% 0.09 154.3)",
-          "oklch(27% 0.09 154.3)",
-          "oklch(39% 0.09 154.3)",
-          "oklch(51% 0.09 154.3)",
-          "oklch(63% 0.09 154.3)",
-          "oklch(75% 0.09 154.3)",
-          "oklch(85% 0.09 154.3)",
-          "oklch(95% 0.09 154.3)"
+          "#020f09",
+          "#162a22",
+          "#30483e",
+          "#4b695c",
+          "#6c8a7d",
+          "#91aca0",
+          "#b7d0c5",
+          "#dff4eb"
         ]
       },
-      "leaf": {
+      "brass": {
         "role": "secondary",
-        "displayName": "Leaf",
-        "canonical": "oklch(61% 0.137 152.9)",
+        "displayName": "Brass",
+        "canonical": "oklch(63.3% 0.087 76.9)",
         "tonalRamp": [
-          "oklch(15% 0.13 152.9)",
-          "oklch(27% 0.13 152.9)",
-          "oklch(39% 0.13 152.9)",
-          "oklch(51% 0.13 152.9)",
-          "oklch(63% 0.13 152.9)",
-          "oklch(75% 0.13 152.9)",
-          "oklch(85% 0.13 152.9)",
-          "oklch(95% 0.13 152.9)"
+          "#170700",
+          "#362000",
+          "#573c0b",
+          "#7b5a25",
+          "#9e7c47",
+          "#bfa071",
+          "#e1c59c",
+          "#ffebc8"
         ]
       },
-      "focus-blue": {
-        "role": "tertiary",
-        "displayName": "Focus Blue",
-        "canonical": "oklch(50.2% 0.164 259)",
+      "brass-ink": {
+        "role": "secondary",
+        "displayName": "Brass Ink",
+        "canonical": "oklch(54.5% 0.081 77.9)",
         "tonalRamp": [
-          "oklch(15% 0.15 259)",
-          "oklch(27% 0.15 259)",
-          "oklch(39% 0.15 259)",
-          "oklch(51% 0.15 259)",
-          "oklch(63% 0.15 259)",
-          "oklch(75% 0.15 259)",
-          "oklch(85% 0.15 259)",
-          "oklch(95% 0.15 259)"
+          "#160700",
+          "#342100",
+          "#553d12",
+          "#795b2b",
+          "#9c7d4c",
+          "#bca076",
+          "#dec5a0",
+          "#ffebcb"
         ]
       },
-      "card-white": {
+      "brass-light": {
+        "role": "secondary",
+        "displayName": "Light Brass",
+        "canonical": "oklch(74.5% 0.088 81.0)",
+        "tonalRamp": [
+          "#160700",
+          "#342100",
+          "#563d09",
+          "#795c23",
+          "#9c7d46",
+          "#bda170",
+          "#dec69b",
+          "#ffecc7"
+        ]
+      },
+      "ivory": {
         "role": "neutral",
-        "displayName": "Card White",
-        "canonical": "oklch(100% 0 0)",
+        "displayName": "Ivory",
+        "canonical": "oklch(95.3% 0.016 86.4)",
         "tonalRamp": [
-          "oklch(15% 0.0 155)",
-          "oklch(27% 0.0 155)",
-          "oklch(39% 0.0 155)",
-          "oklch(51% 0.0 155)",
-          "oklch(63% 0.0 155)",
-          "oklch(75% 0.0 155)",
-          "oklch(85% 0.0 155)",
-          "oklch(95% 0.0 155)"
+          "#0d0b07",
+          "#27251f",
+          "#45423a",
+          "#656158",
+          "#868279",
+          "#a8a59c",
+          "#ccc9c1",
+          "#f1eee8"
         ]
       },
-      "mist": {
+      "ivory-muted": {
         "role": "neutral",
-        "displayName": "Mist",
-        "canonical": "oklch(97.1% 0.007 151.9)",
+        "displayName": "Muted Ivory",
+        "canonical": "oklch(83.4% 0.026 89.2)",
         "tonalRamp": [
-          "oklch(15% 0.007 151.9)",
-          "oklch(27% 0.007 151.9)",
-          "oklch(39% 0.007 151.9)",
-          "oklch(51% 0.007 151.9)",
-          "oklch(63% 0.007 151.9)",
-          "oklch(75% 0.007 151.9)",
-          "oklch(85% 0.007 151.9)",
-          "oklch(95% 0.007 151.9)"
+          "#0e0b05",
+          "#29251b",
+          "#464235",
+          "#676152",
+          "#888272",
+          "#aaa596",
+          "#cec9bc",
+          "#f2eee3"
         ]
       },
-      "rule": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Rule",
-        "canonical": "oklch(90.2% 0.02 154.9)",
+        "displayName": "Paper",
+        "canonical": "oklch(98.5% 0.004 91.4)",
         "tonalRamp": [
-          "oklch(15% 0.02 154.9)",
-          "oklch(27% 0.02 154.9)",
-          "oklch(39% 0.02 154.9)",
-          "oklch(51% 0.02 154.9)",
-          "oklch(63% 0.02 154.9)",
-          "oklch(75% 0.02 154.9)",
-          "oklch(85% 0.02 154.9)",
-          "oklch(95% 0.02 154.9)"
+          "#0b0b0a",
+          "#252523",
+          "#434240",
+          "#62615f",
+          "#838280",
+          "#a6a5a3",
+          "#cac9c7",
+          "#efeeed"
+        ]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone",
+        "canonical": "oklch(95.0% 0.010 87.5)",
+        "tonalRamp": [
+          "#0c0b08",
+          "#262521",
+          "#44423d",
+          "#63615b",
+          "#85827c",
+          "#a7a59f",
+          "#cbc9c4",
+          "#f0eeea"
         ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
-        "canonical": "oklch(25.1% 0.027 162)",
+        "canonical": "oklch(23.9% 0.013 160.2)",
         "tonalRamp": [
-          "oklch(15% 0.027 162)",
-          "oklch(27% 0.027 162)",
-          "oklch(39% 0.027 162)",
-          "oklch(51% 0.027 162)",
-          "oklch(63% 0.027 162)",
-          "oklch(75% 0.027 162)",
-          "oklch(85% 0.027 162)",
-          "oklch(95% 0.027 162)"
+          "#090c0a",
+          "#212624",
+          "#3d4440",
+          "#5c635f",
+          "#7c8580",
+          "#a0a7a3",
+          "#c4cbc7",
+          "#eaf0ed"
         ]
       },
       "ink-soft": {
         "role": "neutral",
-        "displayName": "Ink Soft",
-        "canonical": "oklch(40.3% 0.026 161.9)",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(43.0% 0.013 158.4)",
         "tonalRamp": [
-          "oklch(15% 0.026 161.9)",
-          "oklch(27% 0.026 161.9)",
-          "oklch(39% 0.026 161.9)",
-          "oklch(51% 0.026 161.9)",
-          "oklch(63% 0.026 161.9)",
-          "oklch(75% 0.026 161.9)",
-          "oklch(85% 0.026 161.9)",
-          "oklch(95% 0.026 161.9)"
+          "#090c0a",
+          "#212623",
+          "#3d4440",
+          "#5c635f",
+          "#7c8580",
+          "#a0a7a2",
+          "#c4cbc7",
+          "#eaf0ec"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline only; second clause on its own line in shamrock green."
+        "purpose": "Hero headline only; one balanced line per sentence."
       },
-      "figure": {
-        "displayName": "Figure",
-        "purpose": "The price. Largest element after the headline."
+      "price": {
+        "displayName": "Price",
+        "purpose": "The rate line in bottle green; the figure inside is swapped to sans 500, -0.02em."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "One per band; balanced wrapping."
+        "purpose": "Section headings."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Step titles and the verb inside the Call button."
+        "purpose": "Step titles in How it works."
       },
-      "lead-large": {
-        "displayName": "Lead Large",
-        "purpose": "The hero's one introducing sentence."
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Roman step numerals I-III in brass ink."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Business name in header and footer, uppercase, letterspaced."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero introductory sentence, max 30em."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "All running text; leads capped at 34em."
+        "purpose": "All paragraphs, max 32em, pretty wrap. Floor 18px."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Number under button labels, notes, footer, brand. The 18px floor."
+        "purpose": "Action word on the Call button, uppercase."
+      },
+      "phone": {
+        "displayName": "Phone",
+        "purpose": "Phone number inside the Call button, tabular figures."
       }
     },
-    "shadows": [
-      {
-        "name": "call-ambient",
-        "value": "0 8px 18px -10px rgba(8,83,45,.55)",
-        "purpose": "Soft green lift under the Call button only; the one raised thing on the page."
-      }
-    ],
-    "outlines": [
-      {
-        "name": "focus-ring",
-        "value": "3px solid #1f5fbf; outline-offset: 3px; border-radius: 6px",
-        "purpose": "Keyboard focus and Call button hover on every interactive element."
-      },
-      {
-        "name": "header-phone-hover",
-        "value": "2px solid #1f5fbf; outline-offset: 2px",
-        "purpose": "Hover on the header phone number, with underline."
-      }
-    ],
+    "shadows": [],
     "motion": [
       {
-        "name": "call-color-ease",
-        "value": "background-color .15s, box-shadow .15s",
-        "purpose": "The only time-based change: Call button fill darkening on hover. Nothing moves; no transforms, entrances, or scroll effects."
+        "name": "button-recolor",
+        "value": "background-color .15s",
+        "purpose": "The only transition in the system: Call button fill change on hover/active. No other motion; the audience is 40-70 and the page sits still."
       }
     ],
     "breakpoints": [
       {
-        "name": "narrow-phone",
-        "value": "max-width: 400px"
+        "name": "tiny",
+        "value": "339px",
+        "note": "wordmark text hidden, mark only"
+      },
+      {
+        "name": "narrow",
+        "value": "379px"
+      },
+      {
+        "name": "compact",
+        "value": "400px"
       },
       {
         "name": "landscape-phone",
-        "value": "(orientation: landscape) and (max-height: 500px)"
+        "value": "(orientation:landscape) and (max-height:500px)"
       },
       {
         "name": "desktop",
-        "value": "min-width: 1024px"
+        "value": "1024px",
+        "note": "72rem container, heading-left/content-right ledger"
       }
-    ]
+    ],
+    "focus": {
+      "value": "outline: 2px solid #a8834a; outline-offset: 4px",
+      "purpose": "Single hover/focus outline for every link and button."
+    }
   },
   "components": [
     {
       "name": "Call Button",
       "kind": "button",
       "refersTo": "button-call",
-      "description": "The only action: green tel: button with the verb over the full number. Repeated at each decision point.",
-      "html": "<a class=\"ds-call\" href=\"tel:+17323003835\"><b>Call Ed</b><span>732-300-3835</span></a><p class=\"ds-call-note\">This is my own cell. You'll talk to me.</p>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-call{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:100%;max-width:26rem;min-height:72px;padding:12px 20px;background:var(--green);color:#fff;text-decoration:none;border-radius:var(--radius);box-shadow:0 8px 18px -10px rgba(8,83,45,.55);transition:background-color .15s,box-shadow .15s;font-family:var(--font)} .ds-call b{font-size:1.5rem;line-height:1.2} .ds-call span{font-size:1.125rem;line-height:1.2;opacity:.95;font-variant-numeric:tabular-nums} .ds-call:hover,.ds-call:active{background:var(--green-deep)} .ds-call:hover,.ds-call:focus-visible{outline:3px solid var(--focus);outline-offset:3px} .ds-call-note{margin:14px 0 0;font-size:1.125rem;color:var(--ink-soft)}"
+      "description": "The only action on the page, on light bands: bottle green plate with letterspaced label and the number printed below.",
+      "html": "<a class=\"ds-call\" href=\"tel:+17323003835\"><b>Call Ed</b><span>732-300-3835</span></a>",
+      "css": ":host{--paper:#fbfaf7;--stone:#f1eee7;--ink:#1a211d;--ink-soft:#4a524d;--green:#123d2e;--green-deep:#0c2b20;--brass:#a8834a;--brass-ink:#8a6a36;--brass-light:#c9a76b;--ivory:#f4efe4;--focus:#a8834a;--serif:\"Marcellus\",\"Trajan Pro\",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-call{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:100%;max-width:24rem;min-height:76px;padding:14px 20px;background:var(--green);color:var(--ivory);text-decoration:none;border-radius:2px;transition:background-color .15s} .ds-call b{font:600 1.125rem/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase} .ds-call span{font:400 1.25rem/1.2 var(--sans);letter-spacing:.04em;font-variant-numeric:tabular-nums} .ds-call:hover,.ds-call:active{background:var(--green-deep)} .ds-call:hover,.ds-call:focus-visible{outline:2px solid var(--focus);outline-offset:4px}"
     },
     {
-      "name": "Header",
+      "name": "Call Button on Green",
+      "kind": "button",
+      "refersTo": "button-call-on-green",
+      "description": "The same plate inverted to ivory for the green hero and closing band.",
+      "html": "<div class=\"ds-greenband\"><a class=\"ds-call ds-call-ivory\" href=\"tel:+17323003835\"><b>Call Ed</b><span>732-300-3835</span></a><p class=\"ds-note\">My own cell. You'll speak with me directly.</p></div>",
+      "css": ":host{--paper:#fbfaf7;--stone:#f1eee7;--ink:#1a211d;--ink-soft:#4a524d;--green:#123d2e;--green-deep:#0c2b20;--brass:#a8834a;--brass-ink:#8a6a36;--brass-light:#c9a76b;--ivory:#f4efe4;--focus:#a8834a;--serif:\"Marcellus\",\"Trajan Pro\",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-call{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:100%;max-width:24rem;min-height:76px;padding:14px 20px;background:var(--green);color:var(--ivory);text-decoration:none;border-radius:2px;transition:background-color .15s} .ds-call b{font:600 1.125rem/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase} .ds-call span{font:400 1.25rem/1.2 var(--sans);letter-spacing:.04em;font-variant-numeric:tabular-nums} .ds-call:hover,.ds-call:active{background:var(--green-deep)} .ds-call:hover,.ds-call:focus-visible{outline:2px solid var(--focus);outline-offset:4px} .ds-greenband{background:var(--green);padding:32px 24px} .ds-call-ivory{background:var(--ivory);color:var(--green)} .ds-call-ivory:hover,.ds-call-ivory:active{background:#fff} .ds-note{margin:16px 0 0;font:400 1.125rem/1.65 var(--sans);color:#cfc8b6}"
+    },
+    {
+      "name": "Header Bar",
       "kind": "nav",
-      "refersTo": "header-phone",
-      "description": "Name and drawn shamrock left, full phone number right; hairline below; not sticky.",
-      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#top\"><svg class=\"ds-mark\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"#2f9a5a\"><path d=\"M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z\"/><path d=\"M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z\" transform=\"rotate(118 32 32)\"/><path d=\"M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z\" transform=\"rotate(-118 32 32)\"/></g><path d=\"M33 34c2 9 6 16 13 23\" fill=\"none\" stroke=\"#0b6b3a\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span>Shamrock Transportation</span></a><a class=\"ds-top-phone\" href=\"tel:+17323003835\">732-300-3835</a></header>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding:0 var(--gutter);border-bottom:1px solid var(--rule);background:var(--paper)} .ds-brand{flex:1 1 0;display:flex;align-items:center;gap:10px;min-height:48px;min-width:0;text-decoration:none;font-weight:700;font-size:1.125rem;line-height:1.2;color:var(--ink)} .ds-mark{width:34px;height:34px;flex:none} .ds-top-phone{flex:none;display:inline-flex;align-items:center;min-height:48px;padding:0 4px;font-weight:700;font-size:1.25rem;white-space:nowrap;color:var(--green);text-decoration:none;border-radius:8px} .ds-top-phone:hover{text-decoration:underline;outline:2px solid var(--focus);outline-offset:2px} .ds-brand:focus-visible,.ds-top-phone:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}"
+      "refersTo": "header-bar",
+      "description": "Non-sticky green bar: shamrock mark and Marcellus wordmark left, full phone number right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"#f4efe4\"><path d=\"M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z\"/><path d=\"M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z\" transform=\"rotate(118 32 32)\"/><path d=\"M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z\" transform=\"rotate(-118 32 32)\"/></g><path d=\"M33 34c2 9 6 16 13 23\" fill=\"none\" stroke=\"#c9a76b\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span>Shamrock Transportation</span></a><a class=\"ds-phone\" href=\"tel:+17323003835\">732-300-3835</a></header>",
+      "css": ":host{--paper:#fbfaf7;--stone:#f1eee7;--ink:#1a211d;--ink-soft:#4a524d;--green:#123d2e;--green-deep:#0c2b20;--brass:#a8834a;--brass-ink:#8a6a36;--brass-light:#c9a76b;--ivory:#f4efe4;--focus:#a8834a;--serif:\"Marcellus\",\"Trajan Pro\",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:76px;padding:0 24px;background:var(--green);color:var(--ivory);border-bottom:1px solid rgba(244,239,228,.14)} .ds-top a{color:inherit} .ds-brand{display:flex;align-items:center;gap:12px;min-height:48px;text-decoration:none;font:400 1.0625rem/1.25 var(--serif);letter-spacing:.1em;text-transform:uppercase} .ds-brand svg{width:30px;height:30px;flex:none} .ds-phone{display:inline-flex;align-items:center;min-height:48px;font:600 1.125rem var(--sans);letter-spacing:.04em;text-decoration:none;font-variant-numeric:tabular-nums} .ds-phone:hover{text-decoration:underline;text-underline-offset:.25em;text-decoration-color:var(--brass)} .ds-top a:focus-visible{outline:2px solid var(--focus);outline-offset:4px}"
     },
     {
-      "name": "Numbered Steps",
+      "name": "Roman Numeral Steps",
       "kind": "custom",
-      "refersTo": "step-number",
-      "description": "Plain ordered list with large green numerals; no badges or connectors.",
-      "html": "<ol class=\"ds-steps\"><li><h3>Call me</h3><p>Tell me where your car is, where it's going, and when.</p></li><li><h3>Fly</h3><p>Hand me the keys and catch your flight.</p></li><li><h3>Your car is waiting</h3><p>I drive it down to Florida. In the spring, I drive it back to New Jersey.</p></li></ol>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:28px;counter-reset:s;font:400 1.25rem/1.6 var(--font)} .ds-steps li{display:grid;grid-template-columns:2.4rem 1fr;gap:4px 14px;counter-increment:s} .ds-steps li::before{content:counter(s);grid-row:span 2;font-size:2.4rem;line-height:1;font-weight:800;color:var(--green)} .ds-steps h3{margin:0;font-size:1.5rem;line-height:1.25;font-weight:700} .ds-steps p{margin:0;color:var(--ink-soft)}"
+      "refersTo": "band",
+      "description": "Ordered steps on a stone band: brass-ink Marcellus numerals in a 3.25rem column, serif title, soft-ink sans description.",
+      "html": "<ol class=\"ds-steps\"><li><span class=\"ds-n\">I</span><h3>A call</h3><p>Tell me where the car is, where it's going, and when.</p></li><li><span class=\"ds-n\">II</span><h3>Your flight</h3><p>Hand me the keys and fly.</p></li><li><span class=\"ds-n\">III</span><h3>Your car, waiting</h3><p>I drive it to Florida, and back in the spring.</p></li></ol>",
+      "css": ":host{--paper:#fbfaf7;--stone:#f1eee7;--ink:#1a211d;--ink-soft:#4a524d;--green:#123d2e;--green-deep:#0c2b20;--brass:#a8834a;--brass-ink:#8a6a36;--brass-light:#c9a76b;--ivory:#f4efe4;--focus:#a8834a;--serif:\"Marcellus\",\"Trajan Pro\",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-steps{list-style:none;margin:0;padding:32px 24px;display:grid;gap:32px;background:var(--stone);color:var(--ink)} .ds-steps li{display:grid;grid-template-columns:3.25rem 1fr;column-gap:12px} .ds-n{grid-row:span 2;font:400 1.75rem/1.3 var(--serif);color:var(--brass-ink)} .ds-steps h3{margin:0 0 4px;font:400 1.5rem/1.3 var(--serif)} .ds-steps p{margin:0;font:400 1.25rem/1.65 var(--sans);color:var(--ink-soft)}"
     },
     {
-      "name": "Mist Band",
-      "kind": "card",
-      "refersTo": "band-mist",
-      "description": "Full-bleed pale-green section with one headline; the band is the only container.",
-      "html": "<section class=\"ds-band\"><h2>One driver: me</h2><p class=\"ds-lead\">I drive your car myself. It doesn't go on a truck, so you can pack it full.</p></section>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-band{background:var(--mist);padding:72px var(--gutter)} .ds-band h2{margin:0 0 24px;font-size:clamp(2rem,1.4rem + 2.6vw,2.75rem);line-height:1.15;font-weight:800;letter-spacing:-.01em;text-wrap:balance} .ds-lead{margin:0;font-size:1.25rem;line-height:1.6;max-width:34em;text-wrap:pretty}"
-    },
-    {
-      "name": "Price Figure",
+      "name": "Price Line",
       "kind": "custom",
-      "refersTo": "figure",
-      "description": "The rate in the Figure style, green, under the band headline.",
-      "html": "<p class=\"ds-price\">$1 a mile</p>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-price{margin:4px 0 20px;font-size:clamp(3.5rem,2.4rem + 5vw,5rem);line-height:1;font-weight:800;color:var(--green);letter-spacing:-.02em}"
+      "refersTo": "button-call",
+      "description": "Large bottle-green serif rate with the figure set in sans.",
+      "html": "<div class=\"ds-rate\"><p class=\"ds-price\"><span class=\"ds-fig\">$1</span> per mile</p><p class=\"ds-body\">Call with your route and I'll give you the total.</p></div>",
+      "css": ":host{--paper:#fbfaf7;--stone:#f1eee7;--ink:#1a211d;--ink-soft:#4a524d;--green:#123d2e;--green-deep:#0c2b20;--brass:#a8834a;--brass-ink:#8a6a36;--brass-light:#c9a76b;--ivory:#f4efe4;--focus:#a8834a;--serif:\"Marcellus\",\"Trajan Pro\",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-rate{background:var(--paper);padding:32px 24px} .ds-price{margin:0 0 20px;font:400 clamp(3.25rem,2.4rem + 4vw,4.75rem)/1 var(--serif);color:var(--green)} .ds-fig{font-family:var(--sans);font-weight:500;letter-spacing:-.02em} .ds-body{margin:0;font:400 1.25rem/1.65 var(--sans);color:var(--ink-soft);max-width:32em}"
     },
     {
-      "name": "Leaf-Dot List",
+      "name": "Brass-Dash List",
       "kind": "custom",
-      "refersTo": "leaf",
-      "description": "Short list with round leaf-green dots instead of glyph bullets.",
-      "html": "<ul class=\"ds-also\"><li>Local and long-distance trips</li><li>Airport service anywhere in Florida</li></ul>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-also{margin:0;padding:0;list-style:none;color:var(--ink-soft);font:400 1.25rem/1.6 var(--font)} .ds-also li{padding-left:1.1em;position:relative} .ds-also li::before{content:\"\";position:absolute;left:0;top:.68em;width:.42em;height:.42em;border-radius:50%;background:var(--leaf)}"
+      "refersTo": "band",
+      "description": "Plain list marked by 1px brass hairlines instead of bullets.",
+      "html": "<ul class=\"ds-also\"><li>Local and long distance</li><li>Airport service anywhere in Florida</li></ul>",
+      "css": ":host{--paper:#fbfaf7;--stone:#f1eee7;--ink:#1a211d;--ink-soft:#4a524d;--green:#123d2e;--green-deep:#0c2b20;--brass:#a8834a;--brass-ink:#8a6a36;--brass-light:#c9a76b;--ivory:#f4efe4;--focus:#a8834a;--serif:\"Marcellus\",\"Trajan Pro\",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-also{list-style:none;margin:0;padding:24px;background:var(--stone);color:var(--ink-soft);font:400 1.25rem/1.65 var(--sans)} .ds-also li{padding-left:1.5em;position:relative} .ds-also li::before{content:\"\";position:absolute;left:0;top:.8em;width:.75em;height:1px;background:var(--brass)}"
     },
     {
-      "name": "Route Drawing",
+      "name": "Hero with Brass Rule and Road",
       "kind": "custom",
-      "refersTo": "shamrock-green",
-      "description": "Signature still SVG: New Jersey to Florida road with a packed car. Drawn once, never animated.",
-      "html": "<svg class=\"ds-route\" viewBox=\"0 0 480 300\" role=\"img\" aria-label=\"Drawing: a car driving the road from New Jersey down to Florida\">\n        <g transform=\"translate(480 0) scale(-1 1)\">\n        <path d=\"M70 70 C 170 70, 170 150, 250 150 S 330 230, 410 230\" fill=\"none\" stroke=\"#d5e3d9\" stroke-width=\"22\" stroke-linecap=\"round\"/>\n        <path d=\"M70 70 C 170 70, 170 150, 250 150 S 330 230, 410 230\" fill=\"none\" stroke=\"#0b6b3a\" stroke-width=\"3\" stroke-dasharray=\"10 12\" stroke-linecap=\"round\"/>\n        <circle cx=\"70\" cy=\"70\" r=\"12\" fill=\"#0b6b3a\"/><circle cx=\"70\" cy=\"70\" r=\"5\" fill=\"#fff\"/>\n        <circle cx=\"410\" cy=\"230\" r=\"12\" fill=\"#0b6b3a\"/><circle cx=\"410\" cy=\"230\" r=\"5\" fill=\"#fff\"/>\n        </g>\n        <text x=\"400\" y=\"36\" text-anchor=\"middle\">New Jersey</text>\n        <text x=\"80\" y=\"278\" text-anchor=\"middle\">Florida</text>\n        \n        <g transform=\"translate(480 0) scale(-1 1)\"><g transform=\"translate(206 104)\">\n          <ellipse cx=\"44\" cy=\"58\" rx=\"46\" ry=\"5\" fill=\"#16261e\" opacity=\".12\"/>\n          <path d=\"M6 44 C6 36 10 32 18 31 L28 18 C31 14 35 13 40 13 L60 13 C65 13 68 15 71 19 L80 31 C88 32 92 36 92 44 L92 50 L6 50 Z\" fill=\"#0b6b3a\"/>\n          <path d=\"M31 30 L38 19 C39 18 40 17 42 17 L51 17 L51 30 Z M55 17 L60 17 C62 17 64 18 65 20 L71 30 L55 30 Z\" fill=\"#e8f3ec\"/>\n          <rect x=\"33\" y=\"24\" width=\"17\" height=\"6\" rx=\"1\" fill=\"#b98a3e\"/><rect x=\"38\" y=\"18.5\" width=\"11\" height=\"5.5\" rx=\"1\" fill=\"#c9a24a\"/><rect x=\"40\" y=\"22\" width=\"9\" height=\"1.2\" fill=\"#8a6528\"/>\n          <circle cx=\"24\" cy=\"50\" r=\"9\" fill=\"#16261e\"/><circle cx=\"24\" cy=\"50\" r=\"3.5\" fill=\"#d5e3d9\"/>\n          <circle cx=\"74\" cy=\"50\" r=\"9\" fill=\"#16261e\"/><circle cx=\"74\" cy=\"50\" r=\"3.5\" fill=\"#d5e3d9\"/>\n        </g></g>\n      </svg>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-route{display:block;width:100%;max-width:30rem;height:auto} .ds-route text{font:700 21px var(--font);fill:var(--ink)}"
-    },
-    {
-      "name": "Footer",
-      "kind": "custom",
-      "refersTo": "footer",
-      "description": "Hairline above; name, owner line, area and number as a tel: link.",
-      "html": "<footer class=\"ds-foot\"><p><strong>Shamrock Transportation</strong></p><p>Ed Brannagan, owner and driver</p><p>New Jersey and Florida · <a href=\"tel:+17323003835\">732-300-3835</a></p></footer>",
-      "css": ":host{--paper:#ffffff;--mist:#f2f7f3;--ink:#16261e;--ink-soft:#3c4d44;--green:#0b6b3a;--green-deep:#08532d;--leaf:#2f9a5a;--rule:#d5e3d9;--focus:#1f5fbf;--radius:14px;--gutter:22px;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-family:var(--font);color:var(--ink)} .ds-foot{border-top:1px solid var(--rule);padding:32px var(--gutter) 44px;font-size:1.125rem;line-height:1.6;color:var(--ink-soft)} .ds-foot p{margin:0} .ds-foot p + p{margin-top:6px} .ds-foot strong{color:var(--ink)} .ds-foot a{display:inline-flex;align-items:center;min-height:48px;color:var(--green);text-underline-offset:.18em;text-decoration-thickness:2px} .ds-foot a:hover,.ds-foot a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}"
+      "refersTo": "button-call-on-green",
+      "description": "Green hero: Marcellus headline, light-brass 56px rule, lead, and the still fine-line road drawing.",
+      "html": "<section class=\"ds-hero\"><h1><span>You fly.</span> <span>I'll drive your car.</span></h1><span class=\"ds-rule\"></span><p class=\"ds-lead\">I'm Ed Brannagan, and I personally drive your car between New Jersey and Florida.</p><svg class=\"ds-road\" viewBox=\"0 0 480 300\" role=\"img\" aria-label=\"The road from New Jersey to Florida\"><g transform=\"translate(480 0) scale(-1 1)\"><path d=\"M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220\" fill=\"none\" stroke=\"#f4efe4\" stroke-opacity=\".28\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220\" fill=\"none\" stroke=\"#c9a76b\" stroke-width=\"2.2\" stroke-dasharray=\"3 7\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"80\" r=\"9\" fill=\"#123d2e\" stroke=\"#f4efe4\" stroke-width=\"2\"/><circle cx=\"410\" cy=\"220\" r=\"9\" fill=\"#c9a76b\"/></g><text x=\"410\" y=\"50\" text-anchor=\"middle\">New Jersey</text><text x=\"70\" y=\"268\" text-anchor=\"middle\">Florida</text></svg></section>",
+      "css": ":host{--paper:#fbfaf7;--stone:#f1eee7;--ink:#1a211d;--ink-soft:#4a524d;--green:#123d2e;--green-deep:#0c2b20;--brass:#a8834a;--brass-ink:#8a6a36;--brass-light:#c9a76b;--ivory:#f4efe4;--focus:#a8834a;--serif:\"Marcellus\",\"Trajan Pro\",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-hero{background:var(--green);color:var(--ivory);padding:56px 24px 72px} .ds-hero h1{margin:0;font:400 clamp(2.75rem,1.9rem + 4vw,4.5rem)/1.08 var(--serif);letter-spacing:-.005em} .ds-hero h1 span{display:block;text-wrap:balance} .ds-rule{display:block;width:56px;height:2px;background:var(--brass-light);margin:28px 0} .ds-lead{margin:0;font:400 1.375rem/1.55 var(--sans);color:#e3dccb;max-width:30em} .ds-road{display:block;width:100%;max-width:30rem;height:auto;margin:48px 0 0} .ds-road text{font:400 26px var(--serif);fill:var(--ivory)}"
     }
   ],
   "narrative": {
-    "northStar": "The Business Card, Enlarged",
-    "overview": "**Creative North Star: \"The Business Card, Enlarged\"**\n\nThe page is Ed Brannagan's business card blown up to the size of a phone screen and read slowly: white card stock, a green shamrock, the name, the number, and a few plain sentences. Everything is set large for readers aged 40 to 70 who open the link from Facebook on a phone. The density is low on purpose: one idea per band, generous margins, and one green Call button wherever a decision happens.\n\nThe world has two materials: the card itself (shamrock green on white) and the trip it promises, drawn once as a still route line from New Jersey down to Florida with a packed car on it. Nothing else decorates the page. There are no cards, no icons, no photos (yet), no animation, nothing that hides or pops up, and no sticky bar. Calm comes from stillness and size, not from ornament.\n\nBuilt type uses the platform's own system face (house style), so the page reads like the phone's own text, heavy-weighted (800) for headings so the hierarchy comes from size and weight alone.",
+    "northStar": "The Private-Club Card",
+    "overview": "The page reads like a heavy engraved card handed across a club table: bottle green stock at the top and bottom, warm paper and stone between, an engraved Roman serif for the name and the headings, and a hairline of brass. It is luxurious only through restraint. There are no effects to carry the feeling; the materials, the spacing and the type do it all.\n\nSimple and clear comes first. The reader is 40 to 70, on a phone, often inside Facebook's browser, deciding whether to trust one man with their car. So body type is large (20px), contrast is high, every section says one thing, and the only action anywhere is a square-cornered button that calls Ed and carries his number on its face. Nothing moves, nothing is hidden, nothing sticks to the screen.\n\nThe structure is one column of full-width bands that becomes a heading-left / content-right ledger at 1024px. The single illustrative element is a still fine-line drawing of the road from New Jersey to Florida, in ivory and brass on the green.",
     "keyCharacteristics": [
-      "White card stock with alternating pale-green (mist) bands; flat, no layered surfaces.",
-      "One accent (shamrock green) for every action and every key number; one separate blue reserved for hover and focus outlines.",
-      "Large system type: 20px body, 18px floor, headings 32 to 68px.",
-      "One action only: call Ed. The number is visible in the header on the first screen and printed on every Call button.",
-      "Nothing moves on its own; nothing is hidden behind a toggle, tab, or popup."
+      "Bottle green grounds the header, hero, closing band and footer; paper and stone alternate between.",
+      "Marcellus (engraved Roman capitals) for headings, the name and numerals; system sans for everything read at length.",
+      "Brass is a hairline material: the short rule, Roman numerals, list dashes, the road, and the single focus/hover outline.",
+      "Flat, square-cornered (2px) buttons with letterspaced capitals and the phone number set below.",
+      "Zero motion beyond a 0.15s background color change; nothing hidden, no sticky elements."
     ],
     "rules": [
       {
-        "name": "The One Green Voice Rule",
-        "body": "Shamrock green marks what to tap and what to remember (the number, the price, the step order). It is never a background band, never body text, never decoration.",
+        "name": "The Brass Is Engraving Rule",
+        "body": "Brass appears only as hairlines, numerals and outlines: the 56px x 2px rule, the I-II-III numerals, 1px list dashes, the road drawing, and the 2px focus/hover outline. It never fills a button, a band, or a block of text.",
         "section": "colors"
       },
       {
-        "name": "The Blue Means Here Rule",
-        "body": "Focus Blue appears only as an outline on hover or keyboard focus. Every interactive element uses it; nothing else on the page is blue.",
+        "name": "The One Outline Rule",
+        "body": "Brass (#a8834a) is the single hover and focus outline color across the whole page: 2px solid, 4px offset, on every link and button. No second focus color, no glow, no ring of another hue.",
         "section": "colors"
       },
       {
-        "name": "The 18px Floor Rule",
-        "body": "No reading text is set below 1.125rem (18px); body is 1.25rem (20px). The only step down is the brand name at 1rem on screens 400px wide or less, so the full phone number still fits beside it.",
+        "name": "The Green Ground Rule",
+        "body": "Green is a ground, not an accent. It covers whole bands edge to edge (header, hero, close, footer) or fills the Call button; it is not sprinkled on icons, borders or inline words.",
+        "section": "colors"
+      },
+      {
+        "name": "The Figures Are Sans Rule",
+        "body": "Every number a reader must read or dial (the phone number, the price figure) is set in the system sans with tabular or tightened figures, even when it sits inside a serif line. Marcellus is reserved for words and Roman numerals.",
         "section": "typography"
       },
       {
-        "name": "The Weight Does The Work Rule",
-        "body": "One system family; headings are 800, sub-titles 700, everything else 400. Do not add a display face to create hierarchy.",
+        "name": "The Single Weight Serif Rule",
+        "body": "Marcellus is used at its one weight (400). Hierarchy comes from size, tracking and case, never from faux bold.",
         "section": "typography"
       },
       {
-        "name": "The Call On Screen One Rule",
-        "body": "On any phone, in either orientation, the first viewport shows the name, the full number, the headline, and the green Call button. Spacing gives way before the button does.",
-        "section": "layout"
-      },
-      {
-        "name": "The No Sticky Rule",
-        "body": "The header scrolls away with the page. There is no sticky bar, floating button, or fixed widget; the Call button is repeated in place at each decision point instead.",
-        "section": "layout"
-      },
-      {
-        "name": "The One Raised Thing Rule",
-        "body": "Only the Call button has a shadow. No other element floats, and no container is lifted to look like a card.",
+        "name": "The Flat Card Rule",
+        "body": "Nothing casts a shadow, nothing lifts, nothing translates. A card is printed, not stacked.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** put the full phone number on every Call button and in the header, as a tel: link with a 48px or larger tap target.",
-      "**Do** use Focus Blue (3px outline, 3px offset) for every hover and keyboard-focus state, and only for that.",
-      "**Do** separate sections with mist and white bands, not borders or boxes.",
-      "**Do** keep body text at 1.25rem and nothing readable below 1.125rem.",
-      "**Do** keep the world to its two materials: the green shamrock on white, and the still drawn route."
+      "Do keep body text at 1.25rem (20px) sans with 1.65 line height; nothing a reader must read drops below 18px.",
+      "Do print the phone number on every Call button, under the letterspaced label, in tabular sans figures.",
+      "Do use brass (#a8834a) as the one hover and focus outline color: 2px solid, 4px offset.",
+      "Do keep buttons flat and square-cornered (2px), bottle green on light bands and ivory on green bands.",
+      "Do set headings, the name and Roman numerals in Marcellus 400, and every dialable or priced figure in the sans.",
+      "Do alternate paper and stone bands between the green hero and the green close, and switch to heading-left / content-right at 1024px.",
+      "Do keep every touch target at least 48px tall."
     ],
     "donts": [
-      "**Don't** animate anything: no scroll reveals, no entrance effects, no moving route, no parallax. The only time-based change is the Call button's 150ms color ease on hover.",
-      "**Don't** hide content behind accordions, tabs, carousels, popups, or \"read more\".",
-      "**Don't** add a sticky bar, floating call button, or fixed chat widget.",
-      "**Don't** add a second action (form, email, text, social link); call is the only action.",
-      "**Don't** put content in cards, add icons, or introduce a web font; the system stack is house style.",
-      "**Don't** use shamrock green as a band background or for body text, or use any blue except for outlines."
+      "Don't add motion: no entrance animations, scroll effects, parallax, or animated drawings. The only transition is the 0.15s button color change. The audience is 40 to 70 and the page must sit still.",
+      "Don't hide content: no accordions, tabs, carousels, popups or \"read more\".",
+      "Don't add a second action. Call is the only action; no forms, email, chat or text buttons.",
+      "Don't add a sticky or fixed bar of any kind; the header scrolls away with the page.",
+      "Don't put shadows on buttons or anything else, and don't lift or translate on hover.",
+      "Don't introduce rounded pills, cards, framed boxes, icon sets or photos-as-decoration; structure comes from bands and brass hairlines.",
+      "Don't use brass as a fill or for body text, and don't introduce a second outline or focus color.",
+      "Don't bold Marcellus or set phone numbers and prices in the serif."
     ]
   }
 }

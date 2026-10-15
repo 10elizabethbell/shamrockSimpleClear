@@ -22,9 +22,9 @@
 @font-face{font-family:"Marcellus";src:url("fonts/marcellus-latin.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 :root{
   --paper:#fbfaf7; --stone:#f1eee7; --ink:#1a211d; --ink-soft:#4a524d;
-  --green:#123d2e; --green-deep:#0c2b20; --leaf:#2f7a55;
+  --green:#123d2e; --green-deep:#0c2b20;
   --brass:#a8834a; --brass-ink:#8a6a36; --brass-light:#c9a76b; --ivory:#f4efe4;
-  --rule:#e2ddd2; --focus:#a8834a;
+  --focus:#a8834a;
   --serif:"Marcellus","Trajan Pro",Georgia,serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --gutter:24px;
@@ -87,7 +87,7 @@ section .call{margin-top:36px}
 .close{background:var(--green);color:var(--ivory)}
 .close .call{background:var(--ivory);color:var(--green)}
 .close .call:hover{background:#fff}
-.close .body{color:#d9d2c2}
+.close .body{color:#cfc8b6}
 footer{background:var(--green-deep);color:#cfc8b6;padding:36px 0 48px;font-size:1.125rem}
 footer .name{font:400 1.0625rem var(--serif);letter-spacing:.1em;text-transform:uppercase;color:var(--ivory)}
 footer p + p{margin-top:6px}
@@ -109,7 +109,7 @@ footer a{display:inline-flex;align-items:center;min-height:48px;color:var(--ivor
 
 .top.dark{background:var(--green);color:var(--ivory);border-bottom:1px solid rgba(244,239,228,.14)}
 .hero.dark{background:var(--green);color:var(--ivory);padding:56px 0 72px}
-.hero.dark .lead{color:#e3dccb}
+.hero.dark .lead{color:var(--ivory)}
 .hero.dark .rule{background:var(--brass-light)}
 .hero.dark .call{background:var(--ivory);color:var(--green);margin-top:36px}
 .hero.dark .call:hover{background:#fff}
@@ -144,7 +144,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <section class="hero dark" id="top">
     <div class="wrap">
       <div>
-        <h1><span>You fly.</span><span>I'll drive your car.</span></h1>
+        <h1><span>You fly.</span> <span>I'll drive your car.</span></h1>
         <span class="rule" aria-hidden="true"></span>
         <p class="lead">I'm Ed Brannagan, and I personally drive your car between New Jersey and Florida.</p>
         <div class="cta">

@@ -35,6 +35,30 @@
         "value": "2.5rem",
         "createdAt": "2026-10-15T11:48:55.246Z",
         "reason": "builder: hero headline on phones held sideways, keeps Call on the first screen"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#e6dcc6",
+        "createdAt": "2026-10-15T13:13:46.926Z",
+        "reason": "builder: ::selection tint only (browser surface)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#fff",
+        "createdAt": "2026-10-15T13:13:46.993Z",
+        "reason": "builder: hover state of the ivory Call buttons on green"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".9375rem",
+        "createdAt": "2026-10-15T13:13:47.059Z",
+        "reason": "builder: header name on phones <=400px so the number fits"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".875rem",
+        "createdAt": "2026-10-15T13:13:47.126Z",
+        "reason": "builder: header name on phones <380px so it never touches the number"
       }
     ]
   }
