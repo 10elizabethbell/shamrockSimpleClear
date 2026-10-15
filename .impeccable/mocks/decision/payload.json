@@ -1,0 +1,44 @@
+{
+  "title": "Choose the elevated hero",
+  "question": "Same serif type, palette and copy below the fold in all three; only the first screen differs. Pick one, or steer.",
+  "options": [
+    {
+      "id": "a-green-hero",
+      "label": "Deep green hero",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "private-club and grand-hotel stationery",
+      "thesis": "The first screen is a bottle-green card with ivory engraved type and one ivory Call button.",
+      "palette": ["#123d2e", "#f4efe4", "#c9a76b", "#fbfaf7"],
+      "materials": ["engraved serif (Marcellus)", "bottle green", "brass rule"],
+      "viewport": "Header and hero on green; headline, brass rule, Ed's line, ivory CALL ED button with the number. Centered on desktop.",
+      "risk": "Most dramatic of the three; dark first screen is heavier on a phone in bright light.",
+      "comp": ".impeccable/mocks/decision/a-green-hero.png",
+      "board": ".impeccable/mocks/decision/a-green-hero-desktop.png"
+    },
+    {
+      "id": "b-itinerary",
+      "label": "Ivory hero, itinerary",
+      "lineage": "first-class boarding pass and travel itinerary",
+      "thesis": "Light first screen; the trip is set as a typeset itinerary: From New Jersey, To Florida, joined by a dotted brass line.",
+      "palette": ["#fbfaf7", "#123d2e", "#8a6a36", "#f1eee7"],
+      "materials": ["engraved serif", "dotted brass line", "letterspaced labels"],
+      "viewport": "Headline, brass rule, Ed's line, green CALL ED button; the From/To itinerary below it on phones, beside it on desktop.",
+      "risk": "Quietest of the three; elegance rests entirely on type and spacing.",
+      "comp": ".impeccable/mocks/decision/b-itinerary.png",
+      "board": ".impeccable/mocks/decision/b-itinerary-desktop.png"
+    },
+    {
+      "id": "c-road",
+      "label": "Ivory hero, fine-line road",
+      "lineage": "today's road drawing, redrawn as a fine-line map",
+      "thesis": "Today's hero kept, restyled: the road from New Jersey down to Florida in a fine stone band with a brass dotted centre line, no car.",
+      "palette": ["#fbfaf7", "#123d2e", "#a8834a", "#e2ddd2"],
+      "materials": ["engraved serif", "fine-line map drawing"],
+      "viewport": "Headline, brass rule, Ed's line, green CALL ED button; the road drawing below on phones, to the right on desktop.",
+      "risk": "Closest to the current page; the drawing still reads as illustration rather than luxury.",
+      "comp": ".impeccable/mocks/decision/c-road.png",
+      "board": ".impeccable/mocks/decision/c-road-desktop.png"
+    }
+  ],
+  "steer": true
+}
