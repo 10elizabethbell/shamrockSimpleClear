@@ -143,10 +143,10 @@ A three-material palette: bottle green as the ground, ivory and warm paper as th
 ### Secondary
 - **Brass** (#a8834a): the outline color for every hover and focus state, the short rule on light bands, and the dash markers in plain lists. Never used for text or fills larger than a hairline.
 - **Brass Ink** (#8a6a36): a darkened brass for text-weight use on light grounds, specifically the Roman step numerals (28px serif, large-text contrast on stone).
-- **Light Brass** (#c9a76b): the brass that sits on green: the hero rule, the dashed road line, the Florida end-point, the stem of the shamrock mark.
+- **Light Brass** (#c9a76b): the brass that sits on green: the hero rule, the dashed road line, the Florida end-point.
 
 ### Neutral
-- **Ivory** (#f4efe4): text and headings on green, the fill of the Call button on green, the shamrock leaves, the road's base stroke.
+- **Ivory** (#f4efe4): text and headings on green, the fill of the Call button on green, the line shamrock, the road's base stroke.
 - **Muted Ivory** (#cfc8b6): secondary text on green (the hero's "My own cell" note, footer lines).
 - **Paper** (#fbfaf7): the page ground; a warm near-white, never pure white.
 - **Stone** (#f1eee7): alternating bands ("How it works", "One driver"), the only tonal separation on light sections.
@@ -188,7 +188,7 @@ A three-material palette: bottle green as the ground, ivory and warm paper as th
 
 One centered column, max 44rem with 24px gutters on phones, built from full-width bands. Bands alternate paper and stone between a green hero and a green close; section padding is 80px vertical on phones and 112px from 1024px.
 
-From 1024px the column widens to 72rem with 56px gutters and every non-hero section becomes a two-column ledger: heading left (0.8fr), content right (1.2fr), 72px column gap, heading spanning the content rows. The hero becomes a 1.3fr / 0.7fr grid with the road drawing to the right of the text (56px gap); on phones the road sits below the call button.
+From 1024px the column widens to 72rem with 56px gutters and every non-hero section becomes a two-column ledger: heading left (0.8fr), content right (1.2fr), 72px column gap, heading spanning the content rows. The hero text holds to 36rem on the left; the road drawing is set absolutely in the right 44% of the hero, right-aligned to the content edge, running its full height and off the top and bottom edges. On phones the road sits below the call button, full-bleed past both gutters.
 
 Vertical rhythm inside sections: 28px under headings and around the brass rule, 16px between paragraphs and under the button for its note, 36px above each Call button, 32px between steps, 24px above plain lists. Touch targets are at least 48px tall (header links, footer number); the Call button is 76px tall and up to 24rem wide. A landscape-phone override (max-height 500px) shrinks the hero headline and padding so the call button stays in the first view.
 
@@ -231,7 +231,7 @@ The rate as a single large serif line in bottle green with the figure swapped in
 Unbulleted list in soft ink where each item is marked by a 0.75em x 1px brass hairline, 1.5em indent. Used for short service lines.
 
 ### Road Drawing (signature)
-One still SVG line drawing on the green hero: a wide ivory road at 28% opacity under a dashed light-brass centerline (2.2px, 3/7 dash), an outlined ivory start point and a solid light-brass end point, with "New Jersey" and "Florida" set in Marcellus 26px ivory. Max 30rem on phones; fills its grid column on desktop. It does not animate.
+"The open road": one still SVG line drawing on the green hero, a wide ivory road at 16–20% opacity under a dashed light-brass centerline (2.2–2.4px, 3/7–3/8 dash), an outlined ivory New Jersey point and a solid light-brass Florida point, labelled in Marcellus 26px ivory. The road runs past both points and off the edges of the hero: on desktop a tall north-to-south drawing (viewBox 420x760) fills the hero's height on the right; on phones a horizontal sweep runs full-bleed under the Call button. It does not animate.
 
 ### Footer
 Deep bottle green, muted-ivory text at 1.125rem, the wordmark in ivory Marcellus caps, the phone number as a 48px-tall ivory link.

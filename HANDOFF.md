@@ -7,7 +7,7 @@
 - **One short page, single `index.html`, nothing moves.** About 15 KB plus one 14 KB font file (`fonts/marcellus-latin.woff2`, Marcellus, SIL OFL). The only script swaps the closing headline to "Heading home to New Jersey?" from March to August.
 - **The look: a private-club card.** Bottle green `#123d2e` for the header, hero and close; near-white paper and stone bands between; ivory text on green; brass only for the short rule under the headline, the Roman numerals and the hover/focus outlines. Headings and the name in Marcellus (an engraved, Trajan-like serif); body in the system sans at 20px; button labels in letterspaced capitals on square-cornered buttons.
 - **Header (green):** ivory shamrock + "SHAMROCK TRANSPORTATION", full number on the right (tap to call). Smaller on phones under 380px so they never touch.
-- **Hero (green):** "You fly. / I'll drive your car.", brass rule, "I'm Ed Brannagan, and I personally drive your car between New Jersey and Florida.", ivory **CALL ED / 732-300-3835** button, "My own cell. You'll speak with me directly." The fine-line road (a faint ivory band with a brass dotted centre line, New Jersey upper right, Florida lower left) sits below on phones and to the right on desktop. Drawn once, still.
+- **Hero (green):** "You fly. / I'll drive your car.", brass rule, "I'm Ed Brannagan, and I personally drive your car between New Jersey and Florida.", ivory **CALL ED / 732-300-3835** button, "My own cell. You'll speak with me directly." **The open road** (Ellie's pick from a second hero round, 2026-10-15; comps in `.impeccable/mocks/hero-road/`): a faint ivory band with a brass dotted centre line. On desktop it runs the full height of the hero on the right, off the top and bottom edges, with New Jersey near the top and Florida near the bottom. On phones it sweeps full-width under the button, off both sides. Drawn once, still.
 - **Sections:** How it works (I A call · II Your flight · III Your car, waiting) → The rate ("$1 per mile", "Call for your total") → One driver ("I drive your car myself. It never goes on a truck, so it can travel packed with your things." + the card's other two services) → When a truck is the better choice (answer always showing) → Heading south this winter? (green, ivory Call button) → footer (deep green).
 - **Layout:** one column on phones; from 1024px each band puts its heading on the left and content on the right. A phone held sideways gets a tighter hero so Call stays on the first screen.
 - **Contact:** every call link is `tel:+17323003835`. No text button (texting unknown).
@@ -44,7 +44,8 @@
 10. Want youflyilldrive.com registered and pointed here?
 
 ## Ideas not built (yours to pick)
-- **The other two heroes from the decision round:** B, an ivory itinerary ("From New Jersey / To Florida" with a dotted brass line), and C, the ivory fine-line road on its own. Comps in `.impeccable/mocks/decision/`.
+- **The unchosen road heroes from the second round:** E, the road on a framed map plate ("THE ROUTE"), and F, an itinerary road with FROM New Jersey / TO Florida. Comps in `.impeccable/mocks/hero-road/`.
+- **The other two heroes from the first decision round:** B, an ivory itinerary ("From New Jersey / To Florida" with a dotted brass line), and C, the ivory fine-line road on its own. Comps in `.impeccable/mocks/decision/`.
 - **Text Ed link** under the Call button once Ed confirms he texts (pre-written: "Hi Ed, I'd like my car driven from ___ to ___ around ___.").
 - **Atkinson Hyperlegible** as the body font (the research's pick for this age group), if you want to step off the system font.
 - **A "What's included" line** under $1 a mile once Ed answers question 1.

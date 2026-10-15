@@ -108,29 +108,35 @@ footer a{display:inline-flex;align-items:center;min-height:48px;color:var(--ivor
 }
 
 .top.dark{background:var(--green);color:var(--ivory);border-bottom:1px solid rgba(244,239,228,.14)}
-.hero.dark{background:var(--green);color:var(--ivory);padding:56px 0 72px}
-.hero.dark .lead{color:var(--ivory)}
+.hero.dark{position:relative;overflow:hidden;background:var(--green);color:var(--ivory);padding:48px 0 0}
+.hero.dark .wrap{position:relative;z-index:1}
+.hero.dark .lead{color:var(--ivory);max-width:22em;text-wrap:balance}
 .hero.dark .rule{background:var(--brass-light)}
 .hero.dark .call{background:var(--ivory);color:var(--green);margin-top:36px}
 .hero.dark .call:hover{background:#fff}
 .hero.dark .note{color:#cfc8b6}
-/* fine-line road, drawn once (still) in ivory and brass on the green */
-.road{display:block;width:100%;max-width:30rem;height:auto;margin:48px 0 0}
-.road text{font:400 26px var(--serif);fill:var(--ivory)}
+/* the open road (Ellie's pick, 2026-10-15): drawn once, still. On phones it sweeps
+   full-bleed under the button; on desktop it runs the full height of the hero,
+   off the top and bottom edges, New Jersey at the top and Florida at the bottom. */
+.road-m{display:block;width:calc(100% + 2*var(--gutter));margin:36px calc(-1*var(--gutter)) 0;height:auto;overflow:visible}
+.road-m text,.road-d text{font:400 26px var(--serif);fill:var(--ivory)}
+.road-d{display:none}
 @media (min-width:1024px){
-  .hero.dark{padding:112px 0 128px}
-  .hero.dark .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:56px;align-items:center}
-  .road{margin:0;max-width:none}
+  .hero.dark{padding:120px 0 136px}
+  .hero.dark .wrap > div{max-width:36rem}
+  .road-m{display:none}
+  .road-d{display:block;position:absolute;top:0;bottom:0;right:max(0px,calc(50% - 36rem));height:100%;width:44%}
 }
+@media (orientation:landscape) and (max-height:500px){.hero.dark .lead{max-width:none}.hero.dark .call{margin-top:20px}}
 </style>
 </head>
 <body>
 <!--
 DIRECTION CONTRACT (elevated restyle, chosen by Ellie 2026-10-15 on the Impeccable decision page: option A, deep green hero)
 THESIS: a private-club card for a personal driver. Bottle green, ivory, a touch of brass, engraved serif type. Simple and clear first, luxurious through restraint, never through effects.
-OWN-WORLD: bottle green #123d2e grounds the header, hero and close; near-white paper and stone bands between; Marcellus engraved serif for headings and the name; letterspaced capital labels on square-cornered buttons; brass only for the short rule, Roman numerals and outlines. One still fine-line road drawing; no cards, icons, photos or motion.
+OWN-WORLD: bottle green #123d2e grounds the header, hero and close; near-white paper and stone bands between; Marcellus engraved serif for headings and the name; letterspaced capital labels on square-cornered buttons; brass only for the short rule, Roman numerals and outlines. One still fine-line road drawing that runs off the edges of the hero; no cards, icons, photos or motion.
 STORY: You fly. I'll drive your car. → How it works (I-III) → $1 per mile → One driver → When a truck is better → call.
-FIRST VIEWPORT (phone): green header with name and full number; ivory headline, brass rule, Ed's line, ivory CALL ED button carrying the number, "My own cell" note. The fine-line road (from option C, Ellie's request) sits below on phones and to the right on desktop.
+FIRST VIEWPORT (phone): green header with name and full number; ivory headline, brass rule, Ed's line, ivory CALL ED button carrying the number, "My own cell" note. The open road (Ellie's pick from the hero-road round, 2026-10-15; comp .impeccable/mocks/hero-road/d-open-road.png) sweeps full-bleed below the button on phones and runs the full height of the hero on the right on desktop, off both edges.
 FORM: one column, full-width bands; heading left / content right from 1024px. No concept-seed key: the direction came from Ellie's request and a three-draft hero round on the decision page, not a roll. Comp: .impeccable/mocks/decision/a-green-hero.png.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 -->
@@ -142,6 +148,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </header>
 <main>
   <section class="hero dark" id="top">
+    <svg class="road-d" viewBox="0 0 420 760" preserveAspectRatio="xMaxYMid meet" role="img" aria-label="Drawing: the road from New Jersey down to Florida">
+        <path d="M420 -40 C380 40 350 110 300 150 C220 215 300 300 230 370 S120 470 150 530 S150 585 130 600 S60 720 20 820" fill="none" stroke="#f4efe4" stroke-opacity=".16" stroke-width="20" stroke-linecap="round"/>
+        <path d="M420 -40 C380 40 350 110 300 150 C220 215 300 300 230 370 S120 470 150 530 S150 585 130 600 S60 720 20 820" fill="none" stroke="#c9a76b" stroke-width="2.4" stroke-dasharray="3 8" stroke-linecap="round"/>
+        <circle cx="300" cy="150" r="10" fill="#123d2e" stroke="#f4efe4" stroke-width="2"/>
+        <circle cx="130" cy="600" r="10" fill="#c9a76b"/>
+        <text x="276" y="140" text-anchor="end">New Jersey</text>
+        <text x="170" y="648" text-anchor="start">Florida</text>
+      </svg>
     <div class="wrap">
       <div>
         <h1><span>You fly.</span> <span>I'll drive your car.</span></h1>
@@ -152,15 +166,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <p class="note">My own cell. You'll speak with me directly.</p>
         </div>
       </div>
-      <svg class="road" viewBox="0 0 480 300" role="img" aria-label="Drawing: the road from New Jersey down to Florida">
-        <g transform="translate(480 0) scale(-1 1)">
-          <path d="M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220" fill="none" stroke="#f4efe4" stroke-opacity=".28" stroke-width="14" stroke-linecap="round"/>
-          <path d="M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220" fill="none" stroke="#c9a76b" stroke-width="2.2" stroke-dasharray="3 7" stroke-linecap="round"/>
-          <circle cx="70" cy="80" r="9" fill="#123d2e" stroke="#f4efe4" stroke-width="2"/>
-          <circle cx="410" cy="220" r="9" fill="#c9a76b"/>
-        </g>
-        <text x="410" y="50" text-anchor="middle">New Jersey</text>
-        <text x="70" y="268" text-anchor="middle">Florida</text>
+      <svg class="road-m" viewBox="0 0 480 290" role="img" aria-label="Drawing: the road from New Jersey down to Florida">
+        <path d="M560 30 C500 50 460 80 410 80 C310 80 310 150 230 150 S150 220 70 220 S-40 240 -90 250" fill="none" stroke="#f4efe4" stroke-opacity=".2" stroke-width="16" stroke-linecap="round"/>
+        <path d="M560 30 C500 50 460 80 410 80 C310 80 310 150 230 150 S150 220 70 220 S-40 240 -90 250" fill="none" stroke="#c9a76b" stroke-width="2.2" stroke-dasharray="3 7" stroke-linecap="round"/>
+        <circle cx="410" cy="80" r="9" fill="#123d2e" stroke="#f4efe4" stroke-width="2"/>
+        <circle cx="70" cy="220" r="9" fill="#c9a76b"/>
+        <text x="410" y="44" text-anchor="middle">New Jersey</text><text x="86" y="270" text-anchor="middle">Florida</text>
       </svg>
     </div>
   </section>
