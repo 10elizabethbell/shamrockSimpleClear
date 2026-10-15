@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shamrock Transportation · Ed Brannagan · NJ ↔ Florida car driving</title>
+<meta name="description" content="You fly. I'll drive your car. Ed Brannagan drives snowbirds' cars between New Jersey and Florida for $1 a mile. Call 732-300-3835.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shamrock Transportation · You fly. I'll drive your car.">
+<meta property="og:description" content="Ed Brannagan drives your car between New Jersey and Florida. $1 a mile. Call 732-300-3835.">
+<meta property="og:url" content="https://10elizabethbell.github.io/shamrockSimpleClear/">
+<meta property="og:image" content="https://10elizabethbell.github.io/shamrockSimpleClear/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  --paper:#ffffff;
+  --mist:#f2f7f3;          /* pale shamrock band */
+  --ink:#16261e;           /* body text: green-black, not pure black */
+  --ink-soft:#3c4d44;      /* secondary text, 9:1 on white */
+  --green:#0b6b3a;         /* shamrock green, button fill */
+  --green-deep:#08532d;    /* pressed */
+  --leaf:#2f9a5a;          /* shamrock drawing only */
+  --rule:#d5e3d9;
+  --focus:#1f5fbf;         /* one accent for hover/focus outlines */
+  --radius:14px;
+  --gutter:22px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.25rem/1.6 var(--font)}
+::selection{background:#cfe8d8;color:var(--ink)}
+h1,h2,h3,p,ol,ul{margin:0}
+a{color:var(--green);text-underline-offset:.18em;text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:44rem;margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.75rem 1rem;z-index:2}
+.skip:focus{left:var(--gutter)}
+
+/* ---------- Header: name + full number ---------- */
+.top{border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;max-width:72rem}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;line-height:1.2;color:var(--ink)}
+.brand svg{width:34px;height:34px;flex:none}
+.top-phone{display:inline-flex;align-items:center;min-height:48px;padding:0 4px;font-weight:700;font-size:1.15rem;white-space:nowrap;color:var(--green);text-decoration:none;border-radius:8px}
+.top-phone:hover{text-decoration:underline;outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:400px){.brand{font-size:.95rem}.brand svg{width:28px;height:28px}.top-phone{font-size:1.05rem}}
+@media (max-width:339px){.brand span{display:none}}
+
+/* ---------- Call button (the one action) ---------- */
+.call{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:100%;max-width:26rem;min-height:72px;padding:12px 20px;
+  background:var(--green);color:#fff;text-decoration:none;border-radius:var(--radius);
+  box-shadow:0 2px 0 var(--green-deep),0 8px 18px -10px rgba(8,83,45,.55);transition:background-color .15s,box-shadow .15s}
+.call b{font-size:1.35rem;line-height:1.2}
+.call span{font-size:1.1rem;line-height:1.2;opacity:.95;font-variant-numeric:tabular-nums}
+.call:hover{background:var(--green-deep);outline:3px solid var(--focus);outline-offset:3px}
+.call:active{box-shadow:0 0 0 var(--green-deep);transform:translateY(2px)}
+.call-note{margin-top:14px;font-size:1.05rem;color:var(--ink-soft)}
+
+/* ---------- Sections ---------- */
+section{padding:72px 0}
+section.mist{background:var(--mist)}
+h2{font-size:clamp(2rem,1.4rem + 2.6vw,2.75rem);line-height:1.15;font-weight:800;letter-spacing:-.01em;margin-bottom:24px;text-wrap:balance}
+.lead{font-size:1.25rem;max-width:34em}
+.lead + .lead{margin-top:16px}
+section .call{margin-top:32px}
+
+/* ---------- Hero ---------- */
+.hero{padding:44px 0 56px}
+.hero h1{font-size:clamp(2.6rem,1.6rem + 4.6vw,4.25rem);line-height:1.05;font-weight:800;letter-spacing:-.02em;text-wrap:balance;margin-bottom:20px}
+.hero h1 em{display:block;font-style:normal;color:var(--green)}
+.hero .lead{font-size:1.3rem;margin-bottom:28px}
+.route{display:block;width:100%;max-width:30rem;height:auto;margin:40px 0 0}
+.route text{font:700 21px var(--font);fill:var(--ink)}
+
+/* ---------- How it works ---------- */
+.steps{list-style:none;padding:0;display:grid;gap:28px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:2.4rem 1fr;gap:4px 14px;counter-increment:s}
+.steps li::before{content:counter(s);grid-row:span 2;font-size:2.4rem;line-height:1;font-weight:800;color:var(--green)}
+.steps h3{font-size:1.45rem;line-height:1.25;font-weight:800}
+.steps p{color:var(--ink-soft)}
+
+/* ---------- Cost ---------- */
+.price{font-size:clamp(3.5rem,2.4rem + 5vw,5rem);line-height:1;font-weight:800;color:var(--green);letter-spacing:-.02em;margin:4px 0 20px}
+
+/* ---------- Driver ---------- */
+.also{margin-top:24px;padding:0;list-style:none;color:var(--ink-soft)}
+.also li{padding-left:1.1em;position:relative}
+.also li::before{content:"";position:absolute;left:0;top:.68em;width:.42em;height:.42em;border-radius:50%;background:var(--leaf)}
+
+/* ---------- FAQ (always open) ---------- */
+.q{font-size:1.45rem;line-height:1.3;font-weight:800;margin-bottom:12px}
+
+/* ---------- Close + footer ---------- */
+.close{text-align:left}
+footer{border-top:1px solid var(--rule);padding:32px 0 44px;font-size:1.05rem;color:var(--ink-soft)}
+footer strong{color:var(--ink)}
+footer p + p{margin-top:6px}
+
+/* ---------- Desktop ---------- */
+@media (min-width:1024px){
+  section{padding:104px 0}
+  .hero{padding:88px 0 96px}
+  .wrap{max-width:72rem;padding:0 48px}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+  .route{margin:0;max-width:none}
+  .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps li{display:block}
+  .steps li::before{display:block;margin-bottom:12px}
+  .steps h3{margin-bottom:6px}
+}
+</style>
+</head>
+<body>
+<!--
+DIRECTION CONTRACT
+THESIS: Ed's business card, made into a calm page. White card stock, shamrock green, big plain words, one action (call Ed).
+OWN-WORLD: the card itself (green shamrock on white) plus the trip it promises, drawn once as a still route line from New Jersey down to Florida with a packed car on it. Nothing moves.
+STORY: You fly. I'll drive your car. → How it works in 3 steps → $1 a mile → Ed is the driver → when a truck is better (honest) → call.
+FIRST VIEWPORT (phone): name + full number in the header, the headline, one sentence naming Ed and the route, the green Call button with the number on it.
+FORM: one narrow column of large type with wide margins; alternating white and pale-green bands; one green Call button per decision point; no cards, no icons, no motion.
+-->
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" style="text-decoration:none" aria-label="Shamrock Transportation, back to top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#shamrock"/></svg>
+      <span>Shamrock Transportation</span>
+    </a>
+    <a class="top-phone" href="tel:+17323003835" aria-label="Call Ed at 732-300-3835">732-300-3835</a>
+  </div>
+</header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Drawn stand-in for the shamrock on Ed's card (card scan not cleared for public use). -->
+    <g id="shamrock">
+      <g fill="#2f9a5a">
+        <path d="M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z"/>
+        <path d="M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z" transform="rotate(118 32 32)"/>
+        <path d="M32 31C27 26 17 24 15 15c-1.6-7 6-11.5 11-7.5 2.6 2 4.4 5 6 8.5 1.6-3.5 3.4-6.5 6-8.5 5-4 12.6.5 11 7.5C47 24 37 26 32 31z" transform="rotate(-118 32 32)"/>
+      </g>
+      <path d="M33 34c2 9 6 16 13 23" fill="none" stroke="#0b6b3a" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </defs>
+</svg>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <h1>You fly. <em>I'll drive your car.</em></h1>
+        <p class="lead">I'm Ed Brannagan. I drive your car between New Jersey and Florida, so you don't have to.</p>
+        <a class="call" href="tel:+17323003835"><b>Call Ed</b><span>732-300-3835</span></a>
+        <p class="call-note">This is my own cell. You'll talk to me.</p>
+      </div>
+      <!-- Still picture: the trip, New Jersey down to Florida. Swap for a photo of Ed beside a car once he sends one. -->
+      <svg class="route" viewBox="0 0 480 300" role="img" aria-label="Drawing: a car driving the road from New Jersey down to Florida">
+        <path d="M70 70 C 170 70, 170 150, 250 150 S 330 230, 410 230" fill="none" stroke="#d5e3d9" stroke-width="22" stroke-linecap="round"/>
+        <path d="M70 70 C 170 70, 170 150, 250 150 S 330 230, 410 230" fill="none" stroke="#0b6b3a" stroke-width="3" stroke-dasharray="10 12" stroke-linecap="round"/>
+        <circle cx="70" cy="70" r="12" fill="#0b6b3a"/><circle cx="70" cy="70" r="5" fill="#fff"/>
+        <circle cx="410" cy="230" r="12" fill="#0b6b3a"/><circle cx="410" cy="230" r="5" fill="#fff"/>
+        <text x="80" y="36" text-anchor="middle">New Jersey</text>
+        <text x="400" y="278" text-anchor="middle">Florida</text>
+        <!-- packed car, side view, heading south -->
+        <g transform="translate(206 104)">
+          <ellipse cx="44" cy="58" rx="46" ry="5" fill="#16261e" opacity=".12"/>
+          <path d="M6 44 C6 36 10 32 18 31 L28 18 C31 14 35 13 40 13 L60 13 C65 13 68 15 71 19 L80 31 C88 32 92 36 92 44 L92 50 L6 50 Z" fill="#0b6b3a"/>
+          <path d="M31 30 L38 19 C39 18 40 17 42 17 L51 17 L51 30 Z M55 17 L60 17 C62 17 64 18 65 20 L71 30 L55 30 Z" fill="#e8f3ec"/>
+          <rect x="40" y="22" width="9" height="8" rx="1.5" fill="#c9a24a"/><rect x="57" y="23" width="8" height="7" rx="1.5" fill="#8fb8d8"/>
+          <circle cx="24" cy="50" r="9" fill="#16261e"/><circle cx="24" cy="50" r="3.5" fill="#d5e3d9"/>
+          <circle cx="74" cy="50" r="9" fill="#16261e"/><circle cx="74" cy="50" r="3.5" fill="#d5e3d9"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="mist" id="how">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><h3>Call me</h3><p>Tell me where your car is, where it's going, and when.</p></li>
+        <li><h3>Fly</h3><p>Pack the car with your things, hand me the keys, and catch your flight.</p></li>
+        <li><h3>Your car is waiting</h3><p>I drive it down to Florida. In the spring, I drive it back to New Jersey.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="cost">
+    <div class="wrap">
+      <h2>What it costs</h2>
+      <!-- RATE: $1 a mile, from Ed via Ellie 2026-10-15. What it includes (gas, tolls, return trip) is not confirmed. -->
+      <p class="price">$1 a mile</p>
+      <p class="lead">Call me with your route and I'll tell you the total.</p>
+      <a class="call" href="tel:+17323003835"><b>Call for your price</b><span>732-300-3835</span></a>
+    </div>
+  </section>
+
+  <section class="mist" id="driver">
+    <div class="wrap">
+      <!-- PHOTO: a head-and-shoulders photo of Ed goes here once he sends one. -->
+      <h2>One driver: me</h2>
+      <p class="lead">I drive your car myself. The number on this page is my own cell, so you talk to me, not a dispatcher.</p>
+      <p class="lead">Because I drive it instead of putting it on a truck, you can pack the car full.</p>
+      <ul class="also">
+        <li>Local and long-distance trips</li>
+        <li>Airport runs anywhere in Florida</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="truck">
+    <div class="wrap">
+      <h2>An honest answer</h2>
+      <p class="q">When is a truck carrier the better choice?</p>
+      <p class="lead">If your car doesn't run, or you don't want any miles put on it, ship it on a truck. If you're not sure, call me and I'll tell you straight.</p>
+    </div>
+  </section>
+
+  <section class="mist close" id="call">
+    <div class="wrap">
+      <h2>Heading south this winter?</h2>
+      <p class="lead">I'm one call away.</p>
+      <a class="call" href="tel:+17323003835"><b>Call Ed</b><span>732-300-3835</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Shamrock Transportation</strong></p>
+    <p>Ed Brannagan, owner and driver</p>
+    <p>New Jersey ↔ Florida · <a href="tel:+17323003835">732-300-3835</a></p>
+  </div>
+</footer>
+
+<script>
+/* Season: March–August the close asks about the trip home. No motion anywhere on this page. */
+(function(){
+  var m = new Date().getMonth();
+  if (m >= 2 && m <= 7) {
+    var h = document.querySelector('#call h2');
+    if (h) h.textContent = 'Heading home this spring?';
+  }
+})();
+</script>
+</body>
+</html>
