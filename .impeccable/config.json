@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-15T11:42:09.056Z",
+        "reason": "pitch-site house style (ellie-taste.md: system font stack); Roboto is only the Android system fallback"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-15T11:42:09.128Z",
+        "reason": "older-audience rules (older-audience.md): 16-20px body/secondary sizes are mandated minimums; headings 32-68px give the real hierarchy"
+      }
+    ]
+  }
+}
