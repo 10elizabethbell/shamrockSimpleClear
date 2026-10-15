@@ -3,15 +3,15 @@
 **Live:** https://10elizabethbell.github.io/shamrockSimpleClear/ · **Repo:** https://github.com/10elizabethbell/shamrockSimpleClear · **Built:** 2026-10-15 from Muse brief (run 2026-10-15, "Vibe 4 — Simple / clear")
 
 ## What's built
-- **One short page, single `index.html`, no images, nothing moves.** About 15 KB. The only script swaps the closing headline to "Heading home to New Jersey?" from March to August.
-- **The look: Ed's business card made into a page.** White ground, green-black text, shamrock green for the Call buttons and key words, pale-green bands every other section. No cards, no icons, no motion. Big type: body 20px, the hero line 24px, section headings 32–44px in sentence case, buttons 72px tall.
-- **Header:** drawn shamrock + "Shamrock Transportation" on the left, the full number 732-300-3835 on the right (tap to call).
-- **Hero:** "You fly. / I'll drive your car." (from the card's domain, youflyilldrive.com), "I'm Ed Brannagan. I drive your car between New Jersey and Florida, so you don't have to.", one green **Call Ed / 732-300-3835** button, and "This is my own cell. You'll talk to me." Beside it (below it on phones) a still drawing: a dashed road from a New Jersey pin (upper right) down to a Florida pin (lower left), with a green car carrying boxes heading south.
-- **Sections, in the brief's order:** How it works (Call me → Fly → Your car is waiting) → What it costs ("$1 a mile", "Call me with your route and I'll tell you the total.", "Call for your total" button) → One driver: me ("I drive your car myself. It doesn't go on a truck, so you can pack it full." plus the card's other two services) → When is a truck the better choice? (answer always showing) → Heading south this winter? (Call button) → footer (name, Ed, New Jersey and Florida, number). Each point is said once.
-- **Layout:** phones get one column. On desktop (1024px+) the hero is two columns, and every band below it puts the heading on the left and the content on the right. A phone held sideways gets a tighter hero so Call stays on the first screen.
-- **Reviewed:** Impeccable detector, a sweep of every mode except live/onboard (animate/overdrive N/A: no motion), and the finish reviewer. Their fixes are applied. Two detector warnings are ignored on purpose in `.impeccable/config.json`: "overused font: Roboto" (only the Android fallback in the house system-font stack) and "flat type hierarchy" (the 18–20px minimums for older readers). The "shape-assembled illustration" advisory on the route drawing stands: it's a stand-in until there's a photo of Ed.
-- **Contact:** every call link is `tel:+17323003835`. No text button, because the brief says texting is unknown.
-- **Shareables:** `favicon.svg` and `apple-touch-icon.png` (white shamrock on green), `og.png` 1200x630 (name, headline, number, route drawing).
+- **Elevated restyle (Ellie, 2026-10-15: "too relaxed… simple, clear, elevated, elegant, like this is a luxury").** Three hero drafts went on Impeccable's decision page; Ellie picked **A, deep green hero**, then asked for **C's fine-line road** inside it. The comps are kept in `.impeccable/mocks/decision/`. The previous "business card" version is in git history (commit before "Elevated restyle").
+- **One short page, single `index.html`, nothing moves.** About 15 KB plus one 14 KB font file (`fonts/marcellus-latin.woff2`, Marcellus, SIL OFL). The only script swaps the closing headline to "Heading home to New Jersey?" from March to August.
+- **The look: a private-club card.** Bottle green `#123d2e` for the header, hero and close; near-white paper and stone bands between; ivory text on green; brass only for the short rule under the headline, the Roman numerals and the hover/focus outlines. Headings and the name in Marcellus (an engraved, Trajan-like serif); body in the system sans at 20px; button labels in letterspaced capitals on square-cornered buttons.
+- **Header (green):** ivory shamrock + "SHAMROCK TRANSPORTATION", full number on the right (tap to call). Smaller on phones under 380px so they never touch.
+- **Hero (green):** "You fly. / I'll drive your car.", brass rule, "I'm Ed Brannagan, and I personally drive your car between New Jersey and Florida.", ivory **CALL ED / 732-300-3835** button, "My own cell. You'll speak with me directly." The fine-line road (a faint ivory band with a brass dotted centre line, New Jersey upper right, Florida lower left) sits below on phones and to the right on desktop. Drawn once, still.
+- **Sections:** How it works (I A call · II Your flight · III Your car, waiting) → The rate ("$1 per mile", "Call for your total") → One driver ("I drive your car myself. It never goes on a truck, so it can travel packed with your things." + the card's other two services) → When a truck is the better choice (answer always showing) → Heading south this winter? (green, ivory Call button) → footer (deep green).
+- **Layout:** one column on phones; from 1024px each band puts its heading on the left and content on the right. A phone held sideways gets a tighter hero so Call stays on the first screen.
+- **Contact:** every call link is `tel:+17323003835`. No text button (texting unknown).
+- **Shareables:** `favicon.svg` and `apple-touch-icon.png` (ivory shamrock with a brass stem on bottle green), `og.png` 1200x630 (green, headline, number, the road).
 
 ## Assumptions I made
 - **$1 a mile is on the page.** The brief (written before it was confirmed) says to keep rates as a placeholder, but your sibling builds record "$1 a mile (Ed, via Ellie, 2026-10-15)", so I used it. Marked with a `RATE` comment in the HTML.
@@ -21,7 +21,8 @@
 - **"In the spring, I drive it back to New Jersey"** comes from your description of the business (2026-10-13).
 - **The honest answer** (truck carrier if the car doesn't run or you don't want miles on it) is general driveaway knowledge in Ed's voice, not something he said.
 - **The shamrock is a drawing** (same shape as the other Shamrock builds), not the card's emblem, because the brief says to ask before using a card scan. Green `#0b6b3a` is a readable shamrock green, not sampled from the card.
-- **I chose the look without the Impeccable decision page** (unattended run). Options I weighed: the business card itself (picked), an AAA TripTik strip map, an interstate guide sign (already used by Owner Trust and Transparent Pricing), hotel stationery (Premium Concierge's), a mile-marker column, a valet key tag.
+- **Marcellus** was my pick for the serif: engraved and classical, and sturdier for older eyes than thin luxury serifs (Premium Concierge already uses Cormorant). Easy to swap: one `@font-face` and `--serif`.
+- **Copy got more formal** for the restyle ("I'll advise you honestly", "$1 per mile", "My own cell. You'll speak with me directly."), still first person as Ed.
 - **The card tagline ("Life is a Highway... Drive it All Night Long") is left off.** "All night long" could worry a careful 60+ customer about a tired driver. Easy to add to the footer if you or Ed want it.
 
 ## Placeholders and gaps
@@ -43,7 +44,7 @@
 10. Want youflyilldrive.com registered and pointed here?
 
 ## Ideas not built (yours to pick)
-- **Runner-up world: an AAA TripTik strip map** — the route as a column of flip-strips from NJ down to FL, very familiar to this audience.
+- **The other two heroes from the decision round:** B, an ivory itinerary ("From New Jersey / To Florida" with a dotted brass line), and C, the ivory fine-line road on its own. Comps in `.impeccable/mocks/decision/`.
 - **Text Ed link** under the Call button once Ed confirms he texts (pre-written: "Hi Ed, I'd like my car driven from ___ to ___ around ___.").
 - **Atkinson Hyperlegible** as the body font (the research's pick for this age group), if you want to step off the system font.
 - **A "What's included" line** under $1 a mile once Ed answers question 1.

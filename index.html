@@ -52,7 +52,7 @@ a:focus-visible{outline:2px solid var(--focus);outline-offset:4px}
 /* call button */
 .call{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:100%;max-width:24rem;min-height:76px;padding:14px 20px;
   background:var(--green);color:var(--ivory);text-decoration:none;border-radius:2px;
-  box-shadow:0 10px 24px -14px rgba(12,43,32,.6);transition:background-color .15s}
+  transition:background-color .15s}
 .call b{font:600 1.125rem/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase}
 .call span{font:400 1.25rem/1.2 var(--sans);letter-spacing:.04em;font-variant-numeric:tabular-nums}
 .call:hover{background:var(--green-deep);outline:2px solid var(--focus);outline-offset:4px}
@@ -60,7 +60,8 @@ a:focus-visible{outline:2px solid var(--focus);outline-offset:4px}
 .note{margin-top:16px;font-size:1.125rem;color:var(--ink-soft)}
 
 /* hero shared */
-.hero h1{font:400 clamp(2.375rem,1.5rem + 4.2vw,4.5rem)/1.1 var(--serif);letter-spacing:-.005em;text-wrap:balance}
+.hero h1{font:400 clamp(2.75rem,1.9rem + 4vw,4.5rem)/1.08 var(--serif);letter-spacing:-.005em}
+.hero h1 span{display:block;text-wrap:balance}
 .hero .lead{font-size:1.375rem;line-height:1.55;max-width:30em}
 .rule{display:block;width:56px;height:2px;background:var(--brass);border:0;margin:28px 0}
 
@@ -77,13 +78,14 @@ section .call{margin-top:36px}
 .steps h3{font:400 1.5rem/1.3 var(--serif);margin-bottom:4px}
 .steps p{color:var(--ink-soft)}
 .price{font:400 clamp(3.25rem,2.4rem + 4vw,4.75rem)/1 var(--serif);color:var(--green);margin:0 0 20px}
+.price .fig{font-family:var(--sans);font-weight:500;letter-spacing:-.02em}
 .also{list-style:none;padding:0;margin-top:24px;color:var(--ink-soft)}
 .also li{padding-left:1.5em;position:relative}
 .also li::before{content:"";position:absolute;left:0;top:.8em;width:.75em;height:1px;background:var(--brass)}
 
 /* close + footer: deep green */
 .close{background:var(--green);color:var(--ivory)}
-.close .call{background:var(--ivory);color:var(--green);box-shadow:none}
+.close .call{background:var(--ivory);color:var(--green)}
 .close .call:hover{background:#fff}
 .close .body{color:#d9d2c2}
 footer{background:var(--green-deep);color:#cfc8b6;padding:36px 0 48px;font-size:1.125rem}
@@ -109,7 +111,7 @@ footer a{display:inline-flex;align-items:center;min-height:48px;color:var(--ivor
 .hero.dark{background:var(--green);color:var(--ivory);padding:56px 0 72px}
 .hero.dark .lead{color:#e3dccb}
 .hero.dark .rule{background:var(--brass-light)}
-.hero.dark .call{background:var(--ivory);color:var(--green);margin-top:36px;box-shadow:none}
+.hero.dark .call{background:var(--ivory);color:var(--green);margin-top:36px}
 .hero.dark .call:hover{background:#fff}
 .hero.dark .note{color:#cfc8b6}
 /* fine-line road, drawn once (still) in ivory and brass on the green */
@@ -129,7 +131,7 @@ THESIS: a private-club card for a personal driver. Bottle green, ivory, a touch 
 OWN-WORLD: bottle green #123d2e grounds the header, hero and close; near-white paper and stone bands between; Marcellus engraved serif for headings and the name; letterspaced capital labels on square-cornered buttons; brass only for the short rule, Roman numerals and outlines. One still fine-line road drawing; no cards, icons, photos or motion.
 STORY: You fly. I'll drive your car. → How it works (I-III) → $1 per mile → One driver → When a truck is better → call.
 FIRST VIEWPORT (phone): green header with name and full number; ivory headline, brass rule, Ed's line, ivory CALL ED button carrying the number, "My own cell" note. The fine-line road (from option C, Ellie's request) sits below on phones and to the right on desktop.
-FORM: one column, full-width bands; heading left / content right from 1024px. Comp: .impeccable/mocks/decision/a-green-hero.png.
+FORM: one column, full-width bands; heading left / content right from 1024px. No concept-seed key: the direction came from Ellie's request and a three-draft hero round on the decision page, not a roll. Comp: .impeccable/mocks/decision/a-green-hero.png.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 -->
 <header class="top dark">
@@ -142,7 +144,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <section class="hero dark" id="top">
     <div class="wrap">
       <div>
-        <h1>You fly.<br>I'll drive your car.</h1>
+        <h1><span>You fly.</span><span>I'll drive your car.</span></h1>
         <span class="rule" aria-hidden="true"></span>
         <p class="lead">I'm Ed Brannagan, and I personally drive your car between New Jersey and Florida.</p>
         <div class="cta">
@@ -152,8 +154,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <svg class="road" viewBox="0 0 480 300" role="img" aria-label="Drawing: the road from New Jersey down to Florida">
         <g transform="translate(480 0) scale(-1 1)">
-          <path d="M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220" fill="none" stroke="#f4efe4" stroke-opacity=".14" stroke-width="14" stroke-linecap="round"/>
-          <path d="M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220" fill="none" stroke="#c9a76b" stroke-width="1.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+          <path d="M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220" fill="none" stroke="#f4efe4" stroke-opacity=".28" stroke-width="14" stroke-linecap="round"/>
+          <path d="M70 80 C 170 80, 170 150, 250 150 S 330 220, 410 220" fill="none" stroke="#c9a76b" stroke-width="2.2" stroke-dasharray="3 7" stroke-linecap="round"/>
           <circle cx="70" cy="80" r="9" fill="#123d2e" stroke="#f4efe4" stroke-width="2"/>
           <circle cx="410" cy="220" r="9" fill="#c9a76b"/>
         </g>
@@ -178,7 +180,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="wrap">
       <h2>The rate</h2>
       <!-- RATE: $1 a mile, from Ed via Ellie 2026-10-15. What it includes is not confirmed. -->
-      <p class="price">$1 per mile</p>
+      <p class="price"><span class="fig">$1</span> per mile</p>
       <p class="body">Call with your route and I'll give you the total.</p>
       <a class="call" href="tel:+17323003835"><b>Call for your total</b><span>732-300-3835</span></a>
     </div>
