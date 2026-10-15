@@ -59,6 +59,12 @@
         "value": ".875rem",
         "createdAt": "2026-10-15T13:13:47.126Z",
         "reason": "builder: header name on phones <380px so it never touches the number"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#000",
+        "createdAt": "2026-10-15T23:30:08.680Z",
+        "reason": "SVG mask black in the shamrock drawing (hides the stem under the leaf); never painted"
       }
     ]
   }
