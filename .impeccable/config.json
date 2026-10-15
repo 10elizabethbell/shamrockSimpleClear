@@ -17,6 +17,24 @@
         ],
         "createdAt": "2026-10-15T11:42:09.128Z",
         "reason": "older-audience rules (older-audience.md): 16-20px body/secondary sizes are mandated minimums; headings 32-68px give the real hierarchy"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1rem",
+        "createdAt": "2026-10-15T11:48:55.116Z",
+        "reason": "builder: header brand name on phones <=400px so the full number fits"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "2.4rem",
+        "createdAt": "2026-10-15T11:48:55.181Z",
+        "reason": "builder: How it works step numerals"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "2.5rem",
+        "createdAt": "2026-10-15T11:48:55.246Z",
+        "reason": "builder: hero headline on phones held sideways, keeps Call on the first screen"
       }
     ]
   }
