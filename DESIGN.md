@@ -173,11 +173,11 @@ A three-material palette: bottle green as the ground, ivory and warm paper as th
 - **Headline** (Marcellus 400, clamp(2rem, 1.5rem + 2.2vw, 2.75rem), 1.15): section headings, balanced wrap.
 - **Title** (Marcellus 400, 1.5rem, 1.3): step titles in "How it works".
 - **Numeral** (Marcellus 400, 1.75rem, 1.3, brass ink): Roman step numerals I, II, III in a 3.25rem gutter column.
-- **Wordmark** (Marcellus 400, 1.0625rem, 0.1em tracking, uppercase): "Shamrock Transportation" in the header and footer. Tightens to 0.9375rem/0.08em under 400px and 0.875rem/0.04em under 380px; the text hides below 340px, leaving the mark.
+- **Wordmark** (Marcellus 400, 1.0625rem, 0.1em tracking, uppercase): "Shamrock Transportation" in the header and footer. Tightens to 0.9375rem/0.08em under 380px.
 - **Lead** (sans 400, 1.375rem, 1.55, max 30em): the hero's introductory sentence.
 - **Body** (sans 400, 1.25rem, 1.65, max 32em, pretty wrap): all paragraphs. Never below 18px anywhere on the page.
 - **Label** (sans 600, 1.125rem, 1.2, 0.16em tracking, uppercase): the action word on the Call button ("CALL ED", "CALL FOR YOUR TOTAL").
-- **Phone** (sans 400, 1.25rem, 0.04em, tabular figures): the number under the label inside the Call button; the header number uses sans 600 at 1.125rem with the same tabular figures.
+- **Phone** (sans 400, 1.25rem, 0.04em, tabular figures): the number under the label inside the Call button.
 
 ### Named Rules
 **The Figures Are Sans Rule.** Every number a reader must read or dial (the phone number, the price figure) is set in the system sans with tabular or tightened figures, even when it sits inside a serif line. Marcellus is reserved for words and Roman numerals.
@@ -218,8 +218,8 @@ The one action on the page; a printed plate that dials Ed.
 
 ### Header Bar
 - **Style:** bottle green, 76px minimum height, ivory text, 1px translucent ivory hairline below. Not sticky.
-- **Content:** the engraved line shamrock (30px, ivory outline with a vein in each leaf, stem tucked behind the lower leaf; shared across the Shamrock builds) with the wordmark on the left; the full phone number on the right in sans 600, tabular, 0.04em. Both are 48px-tall tap targets.
-- **Hover:** the number gains a brass underline (0.25em offset); focus uses the brass outline.
+- **Content:** the engraved line shamrock (30px, ivory outline with a vein in each leaf, stem tucked behind the lower leaf; shared across the Shamrock builds) with the wordmark on the left, a 48px-tall link back to the top. No phone number: the hero's Call button sits directly below it (Ellie, 2026-10-15).
+- **Focus:** the brass outline.
 
 ### Roman Numeral Steps
 A three-row ordered list: a 3.25rem left column holding the Roman numeral in brass-ink Marcellus, spanning the title (Marcellus 1.5rem) and the soft-ink description. 32px between steps. No icons, no circles, no connecting lines.
